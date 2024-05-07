@@ -58,6 +58,10 @@ type ConsistentHash struct {
 }
 
 // ConsistentHashType defines the type of input to hash on.
+//
+// This accepts the following values:
+//
+// * `SourceIP` to route based on the downstream IP address.
 // +kubebuilder:validation:Enum=SourceIP
 type ConsistentHashType string
 
